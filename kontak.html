@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APIS PEDIA</title>
+  <link rel="icon" href="images/icons8-a-62.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      margin-top: 150px;
+    }
+
+
+    form {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+<body>
+     <header>
+        <a href="" class="tittle">APISPEDIA</a>
+        <input type="search" name=""id="" class="input-search" placeholder="Cari Sesuatu Disini...">
+        <button type="submit" class="input-submit">CARI</button>
+        <nav>
+            <ul>
+                <li><a href="#home">BERANDA</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="#tentang">TENTANG</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+
+  <form action="mailto:hafizpratama326@gmail.com" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>

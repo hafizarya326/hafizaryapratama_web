@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icons8-a-62.png">
+    <title>APISPEDIA</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <a href="" class="tittle">APISPEDIA</a>
+        <input type="search" name=""id="" class="input-search" placeholder="Cari Sesuatu Disini...">
+        <button type="submit" class="input-submit">CARI</button>
+        <nav>
+            <ul>
+                <li><h2><a href="index.html">BERANDA</a></h2></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="index.html">TENTANG</a></li>
+                <li><a href="index.html">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Akhir -->
+
+    <!-- Login -->
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="button"></div>
+                <button type="button" class="toggle-button" onclick="login()">LOGIN</button>
+                <button type="button" class="toggle-button" onclick="signin()">SIGN IN</button>
+            </div>
+            <form id="login" action="post" class="input-group">
+                <input type="text" class="input-field" placeholder="Username">
+                <input type="password" class="input-field" placeholder="Password">
+                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                <button type ="submit" class="submit-button">LOGIN</button> 
+
+            </form>
+            <form id="signin" class="input-group">
+                <input type="text" class="input-field" placeholder="Username">
+                <input type="password" class="input-field" placeholder="Password">
+                <input type="email" class="input-field" placeholder="Email">
+                <input type="checkbox" class="check-box"><span>I agree to the term & conditions</span>
+                <button type="submit" class="submit-button">SIGN IN</a></button> 
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Akhir Login -->
+
+    <!-- Java Script -->
+    <script>
+         document.getElementById('button').addEventListener('submit-button', function(event) {
+    event.preventDefault();
+    // Assuming login credentials are valid
+    window.location.href = "index.html";});
+        var a = document.getElementById("login");
+        var b = document.getElementById("signin");
+        var c = document.getElementById("button");
+
+        function signin() {
+            a.style.left = "-400px";
+            b.style.left = "50px";
+            c.style.left = "110px";
+        }
+
+        function login() {
+            a.style.left = "50px";
+            b.style.left = "450px";
+            c.style.left = "0";
+        }
+
+    </script>
+</body>
+</html>
